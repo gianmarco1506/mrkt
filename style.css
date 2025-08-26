@@ -1,0 +1,184 @@
+:root {
+    --bright-pink: #FF007F;
+    --violet: #8A2BE2;
+    --purple: #800080;
+    --background-color: #f0f0f5;
+    --text-color: #333;
+    --light-gray: #eee;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color );
+    line-height: 1.6;
+}
+
+/* Header */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--bright-pink);
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.brand-title {
+    color: #fff;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.main-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+    color: var(--purple);
+}
+
+/* Main Content */
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Carousel Section */
+.products-section {
+    text-align: center;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: var(--purple);
+    margin-bottom: 1.5rem;
+}
+
+.carousel-container {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto 1.5rem;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images img {
+    width: 100%;
+    display: block;
+    flex-shrink: 0;
+    height: auto;
+    object-fit: cover;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.7);
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    z-index: 10;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+.product-details {
+    margin-top: 1rem;
+}
+
+.product-description {
+    font-style: italic;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+.product-price {
+    font-weight: bold;
+    color: var(--violet);
+    font-size: 1.2rem;
+}
+
+#add-to-cart-btn {
+    background-color: var(--violet);
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+#add-to-cart-btn:hover {
+    background-color: var(--purple);
+}
+
+#product-carousel-1{
+    background-image: url(image\ copy.png);
+    background-image: url(image\ copy\ 2.png);
+    background-image: url(image\ copy\ 3.png);
+
+    border-radius: 50px !important;
+}
+
+.carousel-container {
+    width: 100%; /* Largura do carrossel */
+    overflow-x: auto; /* Permite a rolagem horizontal */
+    scroll-snap-type: x mandatory; /* Habilita o snap em rolagem horizontal */
+    display: flex; /* Utiliza flexbox para alinhar os itens */
+}
+
+.carousel-images {
+    display: flex; /* Alinha os itens em linha */
+}
+
+.carousel-item {
+    flex: 0 0 auto; /* Impede que os itens encolham */
+    width: 300px; /* Largura de cada item do carrossel */
+    margin-right: 10px; /* Espaçamento entre os itens */
+    scroll-snap-align: start; /* Faz o snap no início do item */
+}
+
+.carousel-item img {
+    width: 100%; /* Faz a imagem ocupar toda a largura do item */
+    border-radius: 8px; /* Arredonda as bordas das imagens */
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mybeautyfree</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <h1 class="brand-title">mybeautyfree</h1>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#cart-page">Carrinho</a></li>
+                <li><a href="#login-section">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="products-section">
+            <h2>Nossos Produtos</h2>
+            <div class="carousel-container" id="carousel-1-container">
+                
+          
+    <div class="carousel-images">
+        <div class="carousel-item">
+            <img src="Screenshot_20250825-183817.png" alt="Imagem 1">
+        </div>
+        <div class="carousel-item">
+            <img src="Screenshot_20250825-183820.png" alt="Imagem 2">
+            </div>
+        <div class="carousel-item">
+            <img src="Screenshot_20250825-183822.png" alt="Imagem 2">
+            </div>
+        <div class="carousel-item">
+            <img src="image copy 3.png" alt="Imagem 2">
+            </div>
+        <div class="carousel-item">
+            <img src="image copy 2.png" alt="Imagem 2">
+            </div>
+        <div class="carousel-item">
+            <img src="image copy 4.png" alt="Imagem 2">
+            </div>
+        <div class="carousel-item">
+            <img src="image copy.png" alt="Imagem 2">
+            </div>
+        
+        <div class="product-details" id="details-1">
+                <p class="product-description"></p>
+                <p class="product-price"></p>
+            </div>
+           
+        </section>
+        
+        <section class="products-section">
+            <h2>Novidades</h2>
+            <div class="carousel-container" id="carousel-2-container">
+                <div class="carousel-images" id="product-carousel-2">
+
+      <div class="carousel-item">
+            <img src="image copy.png" alt="Imagem 2">
+            </div>
+        
+      <div class="carousel-item">
+            <img src="image copy 2.png" alt="Imagem 2">
+            </div>
+              <div class="carousel-item">
+            <img src="image copy 3.png" alt="Imagem 2">
+            </div>
+
+              <div class="carousel-item">
+            <img src="image copy 4.png" alt="Imagem 2">
+            </div>
+
+        
+
+                    </div>
+              
+            </div>
+            <div class="product-details" id="details-2">
+                <p class="product-description"></p>
+                <p class="product-price"></p>
+            </div>
+            <button class="add-to-cart-btn" data-product-id="2">Adicionar ao Carrinho</button>
+        </section>
+        
+        <section class="products-section">
+            <h2>Melhores da Semana</h2>
+            <div class="carousel-container" id="carousel-3-container">
+                <div class="carousel-images" id="product-carousel-3">
+                    <img src="Screenshot_20250825-183822.png" alt="">
+                    </div>
+                <button class="carousel-btn prev-btn" data-carousel-id="3">&lt;</button>
+                <button class="carousel-btn next-btn" data-carousel-id="3">&gt;</button>
+            </div>
+            <div class="product-details" id="details-3">
+                <p class="product-description"></p>
+                <p class="product-price"></p>
+            </div>
+            <button class="add-to-cart-btn" data-product-id="3">Adicionar ao Carrinho</button>
+        </section>
+
+        <div id="cart-page" style="display:none;">
+            <h2>Seu Carrinho de Compras</h2>
+            <div id="cart-items"></div>
+            <p>Total: <span id="cart-total">$0.00</span></p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
